@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 //post
 Route::get('/', [App\Http\Controllers\Frontend\PostController::class, 'viewPost']);
-Route::get('/{post_slug}', [App\Http\Controllers\Frontend\PostController::class, 'viewPostDetails']);
+Route::get('/blog/{post_slug}', [App\Http\Controllers\Frontend\PostController::class, 'viewPostDetails']);
 
 //comment
 Route::post('comments', [App\Http\Controllers\Frontend\CommentController::class, 'store']);
